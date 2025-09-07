@@ -8,4 +8,9 @@ public class Person
     {
         Name = name;
     }
+
+    public override string ToString()
+    {
+        return $"person: {Name}";
+    }
 }
