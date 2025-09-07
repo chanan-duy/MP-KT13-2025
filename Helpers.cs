@@ -6,4 +6,9 @@ public static class Helpers
     {
         return x.CompareTo(y) >= 0 ? x : y;
     }
+
+    public static void Swap<T>(ref T x, ref T y) where T : notnull
+    {
+        (x, y) = (y, x);
+    }
 }
