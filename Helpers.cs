@@ -11,4 +11,20 @@ public static class Helpers
     {
         (x, y) = (y, x);
     }
+
+    public static void Print<T>(T[] array)
+    {
+        for (var i = 0; i < array.Length; i++)
+        {
+            var item = array[i];
+            Console.Write(item?.ToString() ?? "null");
+
+            if (i != array.Length - 1)
+            {
+                Console.Write(", ");
+            }
+        }
+
+        Console.Write(Environment.NewLine);
+    }
 }
