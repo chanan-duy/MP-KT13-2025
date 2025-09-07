@@ -41,12 +41,24 @@ public static class MainLogic
         Console.WriteLine($"p1 = {person1} ; p2 = {person2}");
     }
 
+    private static void TestPrint()
+    {
+        int[] nums = [654, 154, 993123];
+        string[] strs = ["s1", "s2", "s3"];
+        Book[] books = [new("name1", 123), new("name2", 234), new("name3", 456)];
+
+        Helpers.Print(nums);
+        Helpers.Print(strs);
+        Helpers.Print(books);
+    }
+
     private static void TestHelpers()
     {
         TestMax();
         PrintNewLine();
         TestSwap();
         PrintNewLine();
+        TestPrint();
     }
 
     public static void RunLogic()
